@@ -1,15 +1,15 @@
 'use strict'
 
 export const getEstadoInfo = async function(sigla){
-    const url = `http://localhost:8080/senai/estados/${sigla}`
-    const response = await fetch(url)
+    const url = `http://localhost:8080/senai/estado/${sigla}`
+    const response = await fetch(url);
     const data = await response.json()
 
     return data
 }
 
 export const getCidades = async function(sigla){
-    const url = `http://localhost:8080/v1/senai/cidades//${sigla}`
+    const url = `http://localhost:8080/v1/senai/cidades/${sigla}`
     const response = await fetch(url)
     const data = await response.json()
 
